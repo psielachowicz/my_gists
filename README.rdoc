@@ -1,28 +1,21 @@
 == README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Użyte Gemy:
+gem 'pygments.rb', '~> 0.5.0'
+gem 'redcarpet'
+gem 'quiet_assets'
+gem 'will_paginate', '~> 3.0.5'
+gem 'betterlorem', '~> 0.1.2'
+gem 'bootstrap-sass', '~> 3.0.3.0'
+gem 'bootstrap-will_paginate', '~> 0.0.10'
 
-Things you may want to cover:
+Zmiany w programie:
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+-polonizacja aplikacji
+- szwankujący infinite scrolling ale sprawna paginacja
+- Zwiększenie czcionek
+- Nadanie czytelniejeszgo i ładniejszego wyglądu
+- Powiększenie pola do wklejenia kodu 
 
 
-Please feel free to use a different markup language if you do not plan to run
 <tt>rake doc:app</tt>.
