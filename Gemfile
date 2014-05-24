@@ -37,6 +37,6 @@ gem 'sdoc', '~> 0.4.0',          group: :doc
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data'
-gem 'pygments.rb'
+gem 'pygments.rb', '~> 0.5.0'
 gem 'redcarpet'
 gem 'quiet_assets'

@@ -1,38 +1,192 @@
-body {
-  background-color: #fff;
-  color: #333;
-  font-family: verdana, arial, helvetica, sans-serif;
-  font-size: 13px;
-  line-height: 18px;
+body { background-color: LightSalmon ; color: Tomato; text-align: center; }
+
+table { 
+color: DeepPink;
+font-family: Helvetica, Arial, sans-serif;
+width: 100%;
+border: 1px solid green; 
+border-spacing:2;
+
 }
 
-p, ol, ul, td {
+td, th { 
+border: 2px solid transparent; 
+height: 25px; 
+
+}
+
+th {
+background: Wheat;  /* Darken header a bit */
+font-weight: bold;
+text-align: center; 
+}
+
+td {
+background: Wheat;
+text-align: center;
+}
+
+td:nth-of-type(3)
+{
+word-wrap: break-word;
+max-width: 300px;
+}
+ 
+tr:nth-child(even) td { background: Wheat; }   
+ 
+tr:nth-child(odd) td { background: Tan; }  
+
+
+
+
+
+@media 
+only screen and (max-width: 760px),
+(min-device-width: 300px) and (max-device-width: 1024px)  {
+
+	table, thead, tbody, th, td, tr { 
+		display: block; 
+	}
+
+	thead tr { 
+		position: absolute;
+		top: -9999px;
+		left: -9999px;
+	}
+
+	td { 
+		border: none;
+		position: relative;
+		height: 50px;
+		padding: 3px;
+	}
+
+
+
+td:nth-of-type(1)
+{
+height: 100%;
+}
+
+td:nth-of-type(2):before { content: "Język: "; }
+td:nth-of-type(3):before { content: "Opis: "; }
+
+td:nth-of-type(3)
+{
+max-width: none;
+}
+
+.footer
+{
+display: none;
+}
+
+h1
+{
+font-size: 26px;
+text-align: center;
+}
+
+.btn
+{
+font-size: 14px;
+}
+
+.btn-primary
+{
+padding: 5px;
+font-size: 12px;
+}
+
+.navbar
+{
+min-height: 0px;
+}
+
+
+
+}
+
+
+body, p, ol, ul, td {
   font-family: verdana, arial, helvetica, sans-serif;
-  font-size: 13px;
+  font-size:   18px;
   line-height: 18px;
 }
 
 pre {
-  background-color: #eee;
+  background-color: GoldenRod ;
   padding: 10px;
+  font-size: 13px;
+  text-align: left;
+  margin: 7px;
+}
+
+@media 
+only screen and (max-width: 760px),
+(min-device-width: 300px) and (max-device-width: 1024px)  {
+
+body, p, ol, ul, td {
+  font-size:   14px;
+  line-height: 14px;
+}
+
+pre {
   font-size: 11px;
 }
 
-a {
-  color: #000;
-  &:visited {
-    color: #666;
-  }
-  &:hover {
-    color: #fff;
-    background-color: #000;
-  }
+.github
+{
+display: none;
 }
 
-div {
-  &.field, &.actions {
-    margin-bottom: 10px;
-  }
+.search-query
+{
+max-width: 100px;
+}
+}
+
+#gist_description
+{
+width: 100%;
+}
+a { color: Tomato ; text-decoration: none; font-weight:bold; }
+a:visited { color: Tomato ; text-decoration: none;}
+a:hover { color: Tomato ; text-decoration: none; }
+
+textarea
+{
+background-color: Wheat;
+width: 100%;
+height: 500px;
+}
+
+select
+{
+background-color: Wheat ;
+}
+
+input
+{
+background-color: Wheat ;
+}
+
+#noticewlasny
+{
+background-color: Wheat ;
+font-size: 26px;
+color: Wheat;
+text-align: center;
+margin: 5px;
+line-height: normal;
+background-color: Wheat;
+border-color: #4cae4c;
+border-radius: 4px;
+
+}
+
+div.field, div.actions {
+  margin-bottom: 10px;
 }
 
 #notice {
@@ -52,18 +206,20 @@ div {
   padding-bottom: 0;
   margin-bottom: 20px;
   background-color: #f0f0f0;
-  h2 {
-    text-align: left;
-    font-weight: bold;
-    padding: 5px 5px 5px 15px;
-    font-size: 12px;
-    margin: -7px;
-    margin-bottom: 0px;
-    background-color: #c00;
-    color: #fff;
-  }
-  ul li {
-    font-size: 12px;
-    list-style: square;
-  }
+}
+
+#error_explanation h2 {
+  text-align: left;
+  font-weight: bold;
+  padding: 5px 5px 5px 15px;
+  font-size: 12px;
+  margin: -7px;
+  margin-bottom: 0px;
+  background-color: #c00;
+  color: #fff;
+}
+
+#error_explanation ul li {
+  font-size: 12px;
+  list-style: square;
 }

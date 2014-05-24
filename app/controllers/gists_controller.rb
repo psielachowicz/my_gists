@@ -28,7 +28,7 @@ class GistsController < ApplicationController
 
     respond_to do |format|
       if @gist.save
-        format.html { redirect_to @gist, notice: 'Gist was successfully created.' }
+        format.html { redirect_to @gist, notice: 'Twoj Gist zostal dodany!' }
         format.json { render :show, status: :created, location: @gist }
       else
         format.html { render :new }
@@ -42,7 +42,7 @@ class GistsController < ApplicationController
   def update
     respond_to do |format|
       if @gist.update(gist_params)
-        format.html { redirect_to @gist, notice: 'Gist was successfully updated.' }
+        format.html { redirect_to @gist, notice: 'Modyfikacja sie powiodla' }
         format.json { render :show, status: :ok, location: @gist }
       else
         format.html { render :edit }
@@ -56,7 +56,7 @@ class GistsController < ApplicationController
   def destroy
     @gist.destroy
     respond_to do |format|
-      format.html { redirect_to gists_url, notice: 'Gist was successfully destroyed.' }
+      format.html { redirect_to gists_url, notice: 'Usunieto!' }
       format.json { head :no_content }
     end
   end
