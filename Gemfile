@@ -45,4 +45,3 @@ gem 'bootstrap-will_paginate', '~> 0.0.10'
 gem 'rails_12factor'
 gem 'pg', group: :production
 
-Ruby "1.9.3"
