@@ -16,7 +16,6 @@
         <td><%= gist.snippet %></td>
         <td><%= gist.lang %></td>
         <td><%= gist.description %></td>
-        <td><%= link_to 'Pokaz', gist %></td>
         <td><%= link_to 'Edytuj', edit_gist_path(gist) %></td>
         <td><%= link_to 'Usun', gist, method: :delete, data: { confirm: 'Czy jesteś przekonany,ze chcesz usunac ten wpis?' } %></td>
       </tr>
