@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
   resources :gists
-root :to => "gists#new"
+root :to => "gists#show"
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
