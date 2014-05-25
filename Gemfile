@@ -44,5 +44,4 @@ gem 'bootstrap-sass', '~> 3.0.3.0'
 gem 'bootstrap-will_paginate', '~> 0.0.10'
 gem 'rails_12factor'
 gem 'pg', group: :production
-gem 'pg', group: :development
 
