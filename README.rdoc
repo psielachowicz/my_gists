@@ -1,21 +1,25 @@
 == README
 
-Użyte Gemy:
-gem 'pygments.rb', '~> 0.5.0'
-gem 'redcarpet'
-gem 'quiet_assets'
-gem 'will_paginate', '~> 3.0.5'
-gem 'betterlorem', '~> 0.1.2'
-gem 'bootstrap-sass', '~> 3.0.3.0'
-gem 'bootstrap-will_paginate', '~> 0.0.10'
+<h2>Użyte Gemy:</h2>
+-gem 'pygments.rb', '~> 0.5.0'
+-gem 'redcarpet'
+-gem 'quiet_assets'
+-gem 'will_paginate', '~> 3.0.5'
+-gem 'betterlorem', '~> 0.1.2'
+-gem 'bootstrap-sass', '~> 3.0.3.0'
+-gem 'bootstrap-will_paginate', '~> 0.0.10'
 
-Zmiany w programie:
+<h2>Zmiany w programie:</h2>
 
 -polonizacja aplikacji
 - szwankujący infinite scrolling ale sprawna paginacja
 - Zwiększenie czcionek
 - Nadanie czytelniejeszgo i ładniejszego wyglądu
 - Powiększenie pola do wklejenia kodu 
+
+<h2>Link do aplikacji na heroku</h2>
+<a href="http://aqueous-reef-5085.herokuapp.com/">opis odsyłacza</a>
+
 
 
 <tt>rake doc:app</tt>.
