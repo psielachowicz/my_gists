@@ -18,7 +18,7 @@
 - Powiększenie pola do wklejenia kodu 
 
 <h2>Link do aplikacji na heroku</h2>
-<a href="http://aqueous-reef-5085.herokuapp.com/">opis odsyłacza</a>
+http://aqueous-reef-5085.herokuapp.com/
 
 
 
